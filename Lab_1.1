@@ -1,0 +1,47 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, x1, x2, y1, y2, x, y;
+    printf("enter first_point_line x, y\n");
+    scanf("%d %d", &x1, &y1);
+    printf("enter second_point_line x, y\n");
+    scanf("%d %d", &x2, &y2);
+    printf("enter point x, y\n");
+    scanf("%d %d", &x, &y);\
+    if (x1 == x2 && y1 == y2)\{
+        printf("wrong line coordinations");
+        return 0;
+    }
+    if (x1 == x2){
+        if (x>x2)
+        printf("on the right");
+        if (x<x2)
+        printf("on the left");
+        if (x==x2)
+        printf("on the line");
+        return 0;
+    }
+    a = (y2 - y1);
+    b = (x1 - x2);
+    c = x1*(y1 - y2) + y1*(x2-x1)\
+    if (b>0)
+    {
+      a = -a;
+      b = -b;
+      c = -c;
+    }
+    if ((a*x + b*y + c) > 0 )
+    printf("under the line");
+    else if ((a*x + b*y + c) < 0)
+    printf("above the line");
+    else if ((a*x + b*y + c) == 0)
+    printf("on the line");
+    
+    return 0;
+}
+\
+\
+\
+}
